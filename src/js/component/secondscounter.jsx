@@ -26,31 +26,9 @@ const SecondsCounter = () => {
                     </div>
                 ))}
             </div>
+            <p>Seconds counted since last re-load</p>
         </div>
     );
 };
 
 export default SecondsCounter;
-
-
-
-// const SecondsCounter = (props) => {
-//     const formattedSeconds = seconds.toString().padStart(6, '0');
-//     return (
-//         <>
-//         <div className="bigCounter">
-//             <div><i class="bi bi-clock-fill"></i></div>
-//             <h1>Seconds Counter</h1>
-//             <h2>{props.segundos}</h2>
-//             <div className="counter">
-//                 {formattedSeconds.split('').map((digit, index) => (
-//                     <div key={index} className="digit">
-//                         {digit}
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//         </>
-//     );
-// };
-// export default SecondsCounter;
