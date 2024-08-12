@@ -73,16 +73,21 @@ input {
     font-family: inherit;
     font-size: inherit;
     margin-top: 5px;
+    border-radius: 5px;
+    border-color: rgb(56, 101, 28);
+    background: rgba(188, 209, 154, 0.893);
 }
-.startButton, .pauseButton, .contiueButton, .resetButton {
+.startButton, .pauseButton, .resumeButton, .resetButton {
     height: 40px;
     width: 130px;
     margin-top: 10px;
     border-radius: 10px;
-    
 }
-.startButton:hover, .pauseButton:hover, .contiueButton:hover, .resetButton:hover {
-    box-shadow: 0 1px 5px 2px rgb(209, 207, 160);
+.startButton:hover, .pauseButton:hover, .resumeButton:hover, .resetButton:hover {
+    box-shadow: 0 1px 5px 2px rgb(153, 152, 118);
+}
+.startButton:active, .pauseButton:active, .resumeButton:active, .resetButton:active {
+    box-shadow: 0 1px 5px 2px rgb(196, 248, 141);
 }
 .iconcountdown {
     margin-top: 60px;
