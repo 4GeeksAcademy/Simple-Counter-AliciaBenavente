@@ -6,7 +6,6 @@ const CountDown = () => {
     const [inputValue, setInputValue] = useState("");
     const [countdown, setCountdown] = useState("");
     const [isCounting, setIsCounting] = useState(false);
-    const [isPaused, setIsPaused] = useState(false);
     const handleChange = (event) => {
         setInputValue(event.target.value)};
 
@@ -66,8 +65,8 @@ const CountDown = () => {
                 <form onSubmit={StartCountdown}>
                     <input value={inputValue} onChange={handleChange} type="number"></input>
                     <button className="startButton" type="submit">Start</button>
-                    <button className="pauseButton" type="button" onClick={PausedCountdown} disabled={!isCounting || isPaused}>Pause</button>
-                    <button className="resumeButton" type="button" onClick={ResumeCountdown} disabled={isCounting && !isPaused}>Resume</button>
+                    <button className="pauseButton" type="button" onClick={PausedCountdown} disabled={!isCounting}>Pause</button>
+                    <button className="resumeButton" type="button" onClick={ResumeCountdown} disabled={isCounting}>Resume</button>
                     <button className="resetButton" type="button" onClick={ResetCountdown}>Reset</button>
                         <div className="iconcountdown"><svg xmlns="http://www.w3.org/2000/svg" width="100" fill="currentColor" className="bi bi-clock-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/></svg>
